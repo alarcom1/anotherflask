@@ -1,58 +1,79 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="row border border-primary mb-3">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="{{ url_for('static', filename='images/sample.jpeg') }}" class="d-block w-100"
-                    =======
-                    <img src="{{ url_for('static', filename='images/dogsample.jpg') }}" class="d-block w-100"
-                    >
-                </div>
-                <div class="carousel-item">
-                    <img src="{{ url_for('static', filename='images/sample.jpeg') }}" class="d-block w-100"
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="/about">
+                    <img src="{{ url_for('static', filename='images/indexme.PNG') }}" class="d-block w-100"
                          alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="{{ url_for('static', filename='images/sample.jpeg') }}" class="d-block w-100"
-                    =======
-                    <img src="{{ url_for('static', filename='images/dogsample.jpg') }}" class="d-block w-100">
-                </div>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="/page1">
+                    <img src="{{ url_for('static', filename='images/page1git.PNG') }}" class="d-block w-100"
+                         alt="...">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="/page2">
+                    <img src="{{ url_for('static', filename='images/page2docker.PNG') }}" class="d-block w-100"
+                         alt="...">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="/page3">
+                    <img src="{{ url_for('static', filename='images/page3pyflask.PNG') }}" class="d-block w-100"
+                         alt="...">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="/page4">
+                    <img src="{{ url_for('static', filename='images/page4cicd.PNG') }}" class="d-block w-100"
+                         alt="...">
+                </a>
             </div>
         </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
     <div class="row">
         <div class="col">
             <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="..." class="card-img-top" alt="">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h4 class="card-title bold">Student</h4>
+                    <p class="card-text">Always a student of life, I continue my education at NJIT, check the link to my current program!</p>
+                    <a href="https://www5.njit.edu/graduatestudies/degree-programs/graduatecertificates/foundations-cybersecurity-cert/" class="btn btn-primary">NJIT Certificates</a>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="..." class="card-img-top" alt="">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h4 class="card-title bold">Worker</h4>
+                    <p class="card-text">My professional life and education summarized in my linked-in profile below!</p>
+                    <a href="https://www.linkedin.com/in/mauricio-alarco-hildebrandt-296a59104/" class="btn btn-primary">My Linkedin</a>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="..." class="card-img-top" alt="">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h4 class="card-title bold">Gamer</h4>
+                    <p class="card-text">Currently my favorite game to play. Competitive, fast-paced, and fun.</p>
+                    <a href="https://www.leagueoflegends.com/en-us/" class="btn btn-primary">League of Legends</a>
                 </div>
             </div>
         </div>
