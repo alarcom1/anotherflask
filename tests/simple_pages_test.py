@@ -36,10 +36,16 @@ def test_request_git(client):
     assert b"Page 1" in response.data"""
 
 def test_request_page2(client):
+    """This makes the docker page"""
+    response = client.get("/docker")
+    assert response.status_code == 200
+    assert b"Docker" in response.data
+
+"""def test_request_page2(client):
     """This makes the index page"""
     response = client.get("/page2")
     assert response.status_code == 200
-    assert b"Page 2" in response.data
+    assert b"Page 2" in response.data"""
 
 def test_request_page3(client):
     """This makes the index page"""
