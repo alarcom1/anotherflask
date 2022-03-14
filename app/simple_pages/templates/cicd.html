@@ -2,31 +2,50 @@
 {% block content %}
     <div class="row">
         <div class="col-8">
+            <h1 class="bold">CI/CD</h1>
             <div class="col" -8>
-                <h1 class="bold">CI/CD</h1>
+                <h1>Project</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores eos expedita fuga
-                    incidunt maiores nam perspiciatis quis soluta. Consequatur, corporis tempora. Architecto cupiditate
-                    deleniti dolores eos eum expedita fugiat illum impedit incidunt, ipsam ipsum iste laudantium libero
-                    modi nihil numquam, omnis quasi quidem quisquam quos saepe totam ullam vel.
+                    For my project I used bootstrap v5 for css. I have a yml file that pushes my project image to
+                    heroku twice. One for Dev and one for Prod as a design.
                 </p>
             </div>
             <div class="col" -8>
-                <h1>Git</h1>
+                <h1>GitHub Actions</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores eos expedita fuga
-                    incidunt maiores nam perspiciatis quis soluta. Consequatur, corporis tempora. Architecto cupiditate
-                    deleniti dolores eos eum expedita fugiat illum impedit incidunt, ipsam ipsum iste laudantium libero
-                    modi nihil numquam, omnis quasi quidem quisquam quos saepe totam ullam vel.
+                    In my website project under the ".github/workflows" folder I have a dev.yml and a prod.yml that is synchronized with a heroku deploy
+                    API that I have setup in my Github repository. In Github settings > secrets > actions.
+                </p>
+                <p>
+                    In my flask website application I use the "CI/CD" process using GitHub actions that when my master branch is updated, pushed, or pull requested,
+                     it triggers a workflow to update the heroku prod and dev app
+                </p>
+                <p>
+                    In PyCharm services terminal, I run a "pytest" that runs through a series of checks I have specified in "simple_pages_test.py" python file.
+                </p>
+                <p>
+                    Badges for production workflow and development workflow are displayed in my github repository specified on the "Readme.MD" file.
                 </p>
             </div>
             <div class="col" -8>
-                <h1>Repositories</h1>
+                <h1>Code Review</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores eos expedita fuga
-                    incidunt maiores nam perspiciatis quis soluta. Consequatur, corporis tempora. Architecto cupiditate
-                    deleniti dolores eos eum expedita fugiat illum impedit incidunt, ipsam ipsum iste laudantium libero
-                    modi nihil numquam, omnis quasi quidem quisquam quos saepe totam ullam vel.
+                    In GitHub Actions Workflows, I display a series of workflows that run through test checks specified in my .yml files that runtests,
+                    build containers, and deploys. In summary, the tests;
+                    <ul>
+                <li>set up job</li>
+                <li>run actions/checkout</li>
+                <li>set up python 3.8</li>
+                <li>install dependencies</li>
+                <li>test with pytest</li>
+                <li>post run actions/checkout@v2</li>
+                <li>complete job</li>
+            </ul>
+                </p>
+                <p>
+                    I am able to deploy an image of my project to Dockerhub when my master branch is updated to GitHub because of
+                    the prod.yml file with the build container, runs on, and steps. Configurations where I specified the dockerhub
+                    image, login, and deploy commands.
                 </p>
             </div>
         </div>
