@@ -11,7 +11,8 @@ def test_request_main_menu_links(client):
     """assert b'<a class="nav-link" href="/page2">Page 2</a>' in response.data"""
     assert b'<a class="nav-link" href="/pyflask">Py Flask</a>' in response.data
     """assert b'<a class="nav-link" href="/page3">Page 3</a>' in response.data"""
-    assert b'<a class="nav-link" href="/page4">Page 4</a>' in response.data
+    assert b'<a class="nav-link" href="/cicd">CI/CD</a>' in response.data
+    """assert b'<a class="nav-link" href="/page4">Page 4</a>' in response.data"""
 
 def test_request_index(client):
     """This makes the index page"""
@@ -23,7 +24,7 @@ def test_request_about(client):
     """This makes the about page"""
     response = client.get("/about")
     assert response.status_code == 200
-    assert b"About Page" in response.data
+    assert b"About Mauricio" in response.data
 
 def test_request_git(client):
     """This makes the git page"""
@@ -61,11 +62,17 @@ def test_request_pyflask(client):
     assert response.status_code == 200
     assert b"Page 3" in response.data"""
 
-def test_request_page4(client):
-    """This makes the index page"""
+def test_request_cicd(client):
+    """This makes the ci cd page"""
+    response = client.get("/cicd")
+    assert response.status_code == 200
+    assert b"CI/CD" in response.data
+
+"""def test_request_page4(client):
+    his makes the index page
     response = client.get("/page4")
     assert response.status_code == 200
-    assert b"Page 4" in response.data
+    assert b"Page 4" in response.data"""
 
 def test_request_page_not_found(client):
     """This makes the index page"""
