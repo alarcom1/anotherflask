@@ -1,23 +1,50 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="row border border-primary mb-3">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="{{ url_for('static', filename='images/frontpage.jpg') }}" class="d-block w-100"
-                             alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{ url_for('static', filename='images/frontpage2.jpg') }}" class="d-block w-100"
-                             alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{ url_for('static', filename='images/frontpage3.jpg') }}" class="d-block w-100"
-                             alt="...">
-                    </div>
-                </div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="/about">
+                    <img src="{{ url_for('static', filename='images/indexme.PNG') }}" class="d-block w-100"
+                         alt="...">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="/page1">
+                    <img src="{{ url_for('static', filename='images/page1git.PNG') }}" class="d-block w-100"
+                         alt="...">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="/page2">
+                    <img src="{{ url_for('static', filename='images/page2docker.PNG') }}" class="d-block w-100"
+                         alt="...">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="/page3">
+                    <img src="{{ url_for('static', filename='images/page3pyflask.PNG') }}" class="d-block w-100"
+                         alt="...">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="/page4">
+                    <img src="{{ url_for('static', filename='images/page4cicd.PNG') }}" class="d-block w-100"
+                         alt="...">
+                </a>
             </div>
         </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
     <div class="row">
         <div class="col">
