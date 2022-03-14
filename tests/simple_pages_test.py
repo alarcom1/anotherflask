@@ -24,7 +24,7 @@ def test_request_about(client):
     assert b"About Page" in response.data
 
 def test_request_git(client):
-    """This makes the Git hub page"""
+    """This makes the git page"""
     response = client.get("/git")
     assert response.status_code == 200
     assert b"Git Hub" in response.data
