@@ -39,7 +39,21 @@
                 <h1>Docker Development</h1>
                 <p>
                     Developing and coding with Docker has been new and interesting. First I had to make sure my computer was up to date.
-                     Then I download WindowsLinuxSubsystem2  and installed that.
+                     Then I download WindowsLinuxSubsystem2  and installed that so I can run linux in windows for docker compatibility.
+                </p>
+                <p>
+                    To start a project, I create a Dev Environment container/app. I then go to the container/apps section of docker, find my
+                    app running, I can recognize my app because it will have a green icon. I hover my mouse over it and select "open in vstudio".
+                     Once in VStudio I have access to the terminal by selecting [view > terminal]. From the getting started section I can open a new project. I do a [docker build -t getting started .]
+                     command to build my docker image. Or I can just the CLI icon by hovering over my application before I even get to vstudio.
+                </p>
+                <p>
+                    If I want to run my app on my localhost I can do a [docker run -dp 3000:3000 getting-started] command. This will run my app
+                    in detached container mode on my localhost port 3000.
+                </p>
+                <p>
+                    If I have a repository in dockerhub or github, I could clone them all from my CLI. To push to docker I can do,
+                    [docker push YOUR-USER-NAME/getting-started]. Of course I would first need to log into dockerhub.com from the CLI in docker application.
                 </p>
             </div>
         </div>
