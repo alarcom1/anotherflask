@@ -23,7 +23,6 @@ def test_calculator_result_property():
     assert calc1.result == 5
     assert calc2.result == 6
 
-
 def test_calculator_add_method():
     """Testing the Calculator"""
     calculator = Calculator()
