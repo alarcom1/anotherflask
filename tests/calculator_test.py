@@ -53,9 +53,24 @@ def test_my_first_test_add():
     """Testing the simplest addition"""
     assert 1 + 1 == 2
 
+def test_my_first_test_subtract():
+    """Testing the simplest subtraction"""
+    assert 1 - 1 == 0
+
+def test_my_first_test_multiplication():
+    """Testing the simples multiplication"""
+    assert 1 * 1 == 1
+
 def test_my_first_test_add_with_variables():
     """Testing the simplest addition"""
     value_a = 1
     value_b = 2
     value_c = value_a + value_b
     assert value_a + value_b == value_c
+
+def test_my_first_test_subtraction_with_variables():
+    """Testing the simples subtraction"""
+    value_a = 1
+    value_b = 2
+    value_c = value_a - value_b
+    assert value_a - value_b == value_c
