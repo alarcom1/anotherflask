@@ -3,6 +3,7 @@ from calculator.calculations import Addition, Subtraction, Multiplication
 
 class Calculator:
     """ This is the default result property"""
+
     @staticmethod
     def add(tuple_list):
         """ This is the add method"""
