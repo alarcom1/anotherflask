@@ -9,6 +9,7 @@ class Addition:
     @staticmethod
     def add(value_1, value_2):
         """ This is the add method"""
+        # call the static method add to return the sum and set it to the calculator
         return value_1 + value_2
 
 
