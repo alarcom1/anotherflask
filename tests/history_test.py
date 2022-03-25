@@ -53,7 +53,7 @@ def test_get_calculation_first(clear_history_fixture, setup_addition_calculation
     assert History.get_first_calculation().get_result() == 3
 
 
-def test_history_count(clear_history_fixture, setup_addition_calculation_ficture):
+def test_history_count(clear_history_fixture, setup_addition_calculation_fixture):
     """testing getting the count of calculations from the history"""
     # pylint: disable=unused-argument,redefined-outer-name
     assert History.count_history() == 1
