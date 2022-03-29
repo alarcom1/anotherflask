@@ -46,6 +46,24 @@ def test_request_cicd(client):
     assert response.status_code == 200
     assert b"CI/CD" in response.data
 
+def test_request_pytutorial(client):
+    """This makes the learn python page"""
+    response = client.get("/pytutorial")
+    assert response.status_code == 200
+    assert b"Python Tutorial" in response.data
+
+def test_request_abstraction(client):
+    """This makes the learn python page"""
+    response = client.get("/oop")
+    assert response.status_code == 200
+    assert b"Object Oriented Programming" in response.data
+
+def test_request_aaatesting(client):
+    """This makes the learn python page"""
+    response = client.get("/aaatest")
+    assert response.status_code == 200
+    assert b"AAA Testing" in response.data
+
 def test_request_page_not_found(client):
     """This makes the index page"""
     response = client.get("/page5")

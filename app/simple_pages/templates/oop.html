@@ -1,0 +1,361 @@
+{% extends "base.html" %}
+{% block content %}
+    Object Oriented Programming
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <ul class="h4">
+                    <li class="nav-item"><a class="nav-link" href="/pytutorial">Python</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/oop">OOP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/aaatest">AAA Testing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pyflask">Py Flask</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/cicd">CI/CD</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pytutorial">Learn Python</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                </ul>
+            </div>
+            <div class="col-10">
+                <p>
+                <h1 class="bold"><a class="nav-link" href="/pytutorial"><--- Back to Python</a></h1>
+                </p>
+                <p>
+                <h1 class="bold">O.O.P. terms with definitions</h1>
+
+                </p>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                Instantiation
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                             aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"><strong>Instantiate.</strong>
+                                To create an instance of a class, and to run its initializer. method. A
+                                function that is defined inside a class definition and is invoked on instances
+                                of that class. A compound data type that is often used to model a thing or concept in
+                                the real world.
+                                <P>
+                                    An object is also called an instance of a class. Thus, the process of creating
+                                    object of a class is known as instantiation. </P></div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                Object
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                             aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"><strong>What is an Object in Python?.</strong> Almost everything
+                                in Python is considered
+                                as an object. An object has its own properties(attributes) and behavior(methods).
+
+                                A class is a blueprint of the objects or can be termed as object constructor for
+                                creating objects.
+
+                                One class can have many objects and value of properties for different objects can be
+                                different.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                Class
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                             aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"><strong>What is a Class in Python?</strong> Python is an object
+                                oriented programming
+                                language.
+
+                                Almost everything in Python is an object, with its properties and methods.
+
+                                A Class is like an object constructor, or a "blueprint" for creating objects.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                Namespace
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                             aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"><strong>What is a Namespace in Python?</strong> A namespace is a collection of
+                                names and the details of the objects referenced by the names. We can consider a namespace as a python
+                                dictionary which maps object names to objects. The keys of the dictionary correspond to the names
+                                and the values correspond to the objects in python.
+                                Or in other words, it is also the folders structure in your Python code environment. A class is life a file, a Namespace
+                                is like the folder.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading5">
+                            <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse5" aria-expanded="false"
+                                    aria-controls="flush-collapse5">
+                                Constructor
+                            </button>
+                        </h2>
+                        <div id="flush-collapse5" class="accordion-collapse collapse"
+                             aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">The constructor is a method that is called when an object is created. This method is defined in the class and can be used to initialize basic variables.
+
+If you create four objects, the class constructor is called four times. Every class has a constructor, but its not required to explicitly define it.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading6">
+                            <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse6" aria-expanded="false"
+                                    aria-controls="flush-collapse6">
+                                Fixture
+                            </button>
+                        </h2>
+                        <div id="flush-collapse6" class="accordion-collapse collapse"
+                             aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">pytest fixtures are designed to be explicit, modular and scalable. In testing, a fixture provides a defined, reliable and consistent context for the tests. This could include environment (for example a database configured with known parameters) or content (such as a dataset).
+
+Fixtures define the steps and data that constitute the arrange phase of a test (see Anatomy of a test). In pytest, they are functions you define that serve this purpose. They can also be used to define a test’s act phase; this is a powerful technique for designing more complex tests
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading7">
+                            <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse7" aria-expanded="false"
+                                    aria-controls="flush-collapse7">
+                                Type hint
+                            </button>
+                        </h2>
+                        <div id="flush-collapse7" class="accordion-collapse collapse"
+                             aria-labelledby="flush-heading7" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Type hinting is a formal solution to statically indicate the type of a value within your Python code. It was specified in PEP 484 and introduced in Python 3.5.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading8">
+                            <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse8" aria-expanded="false"
+                                    aria-controls="flush-collapse8">
+                                Type Cast
+                            </button>
+                        </h2>
+                        <div id="flush-collapse8" class="accordion-collapse collapse"
+                             aria-labelledby="flush-heading8" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Type casting is a method used to change the variables/ values declared in a certain data type into a different data type to match the operation required to be performed by the code snippet. In python, this feature can be accomplished by using constructor functions like int(), string(), float(), etc. The type casting process’s execution can be performed by using two different types of type casting, such as implicit type casting and explicit type casting.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading9">
+                            <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse9" aria-expanded="false"
+                                    aria-controls="flush-collapse9">
+                                Unit Test
+                            </button>
+                        </h2>
+                        <div id="flush-collapse9" class="accordion-collapse collapse"
+                             aria-labelledby="flush-heading9" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Unit Testing is the first level of software testing where the smallest testable parts of a software are tested. This is used to validate that each unit of the software performs as designed.
+The unittest test framework is python’s <a href="https://en.wikipedia.org/wiki/XUnit">xUnit</a> style framework.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading10">
+                            <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse10" aria-expanded="false"
+                                    aria-controls="flush-collapse10">
+                                Static
+                            </button>
+                        </h2>
+                        <div id="flush-collapse10" class="accordion-collapse collapse"
+                             aria-labelledby="flush-heading10" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Static method can be called without creating an object or instance. Simply create the method and call it directly. This is in a sense orthogonal to object orientated programming: we call a method without creating objects.
+
+This runs directly against the concept of object oriented programming and might be frowned upon, but at times it can be useful to have a static method.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading11">
+                            <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse11" aria-expanded="false"
+                                    aria-controls="flush-collapse11">
+                                Instance Method
+                            </button>
+                        </h2>
+                        <div id="flush-collapse11" class="accordion-collapse collapse"
+                             aria-labelledby="flush-heading11" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">A class is a user-defined blueprint or prototype from which objects are
+                                created. Classes provide a means of bundling data and functionality together. Creating a new
+                                class creates a new type of object, allowing new instances of that type to be made. Each class
+                                instance can have attributes attached to it for maintaining its state. Class instances can also
+                                have methods (defined by its class) for modifying its state.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading12">
+                            <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse12" aria-expanded="false"
+                                    aria-controls="flush-collapse12">
+                                Static Method
+                            </button>
+                        </h2>
+                        <div id="flush-collapse12" class="accordion-collapse collapse"
+                             aria-labelledby="flush-heading12" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">When we declare a variable inside a class, but outside
+                                the method, it is called a static or class variable. It can be called directly
+                                from a class but not through the instances of a class. However, the static variables
+                                are quite different from the other member, and it does not conflict with the same
+                                variable name in the Python program.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading13">
+                            <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse13" aria-expanded="false"
+                                    aria-controls="flush-collapse13">
+                                Encapsulation
+                            </button>
+                        </h2>
+                        <div id="flush-collapse13" class="accordion-collapse collapse"
+                             aria-labelledby="flush-heading13" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Encapsulation is one of the fundamental concepts in
+                                object-oriented programming (OOP). It describes the idea of wrapping data and
+                                the methods that work on data within one unit. This puts restrictions on accessing
+                                variables and methods directly and can prevent the accidental modification of data.
+                                To prevent accidental change, an object’s variable can only be changed by an object’s
+                                method. Those types of variables are known as private variables. A class is an example
+                                of encapsulation as it encapsulates all the data that is member functions, variables, etc.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading14">
+                            <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse14" aria-expanded="false"
+                                    aria-controls="flush-collapse14">
+                                Inheritance
+                            </button>
+                        </h2>
+                        <div id="flush-collapse14" class="accordion-collapse collapse"
+                             aria-labelledby="flush-heading14" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Inheritance allows us to define a class that inherits all the
+                                methods and properties from another class.
+                                <p>
+                                    Parent class is the class being inherited from, also called base class.
+                                </p>
+                                <p>
+                                    Child class is the class that inherits from another class, also called derived class.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading15">
+                            <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse15" aria-expanded="false"
+                                    aria-controls="flush-collapse15">
+                                Polymorphism
+                            </button>
+                        </h2>
+                        <div id="flush-collapse15" class="accordion-collapse collapse"
+                             aria-labelledby="flush-heading15" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Polymorphism means multiple forms. In python we
+                                can find the same operator or function taking multiple forms. It also useful
+                                in creating different classes which will have class methods with same name.
+                                That helps in re using a lot of code and decreases code complexity. Polymorphism
+                                is also linked to inheritance
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading16">
+                            <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse16" aria-expanded="false"
+                                    aria-controls="flush-collapse16">
+                                Abstraction
+                            </button>
+                        </h2>
+                        <div id="flush-collapse16" class="accordion-collapse collapse"
+                             aria-labelledby="flush-heading16" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Abstraction is used to hide the internal functionality of
+                                the function from the users. The users only interact with the basic implementation
+                                of the function, but inner working is hidden. User is familiar with that "what
+                                function does" but they don't know "how it does."
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading17">
+                            <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse17" aria-expanded="false"
+                                    aria-controls="flush-collapse17">
+                                S.O.L.I.D.
+                            </button>
+                        </h2>
+                        <div id="flush-collapse17" class="accordion-collapse collapse"
+                             aria-labelledby="flush-heading17" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">These five principles are not a specific ordered list
+                                (do this, then that, etc) but a collection of best practices, developed through
+                                the decades. They are gathered into an acronym, as a mnemonic vehicle to be
+                                remembered, similar to others in computer science, e.g.: DRY: Don’t Repeat Yourself;
+                                KISS: Keep It Small and Simple; as pieces of accumulated wisdom. A little side note,
+                                the acronym was created years after these five principles were set together
+                                <p>
+                                    S - The Single-Responsibility Principle (SRP). A class should have one, and only one
+                                    responsibility.
+                                </p>
+                                <p>
+                                    O - The Open-Closed Principle (OCP).  You should not need to modify the code you have
+                                    already written to accommodate new functionality, but simply add what you now need.
+                                </p>
+                                <p>
+                                    L - The Liskov Substitution Principle (LSP) - Functions that use pointers or
+                                    references to base classes must be able to use objects of derived classes without
+                                    knowing it
+                                </p>
+                                <p>
+                                    I - The Interface Segregation Principle (ISP) - Many client-specific interfaces
+                                    are better than one general-purpose interface
+                                </p>
+                                <p>
+                                    D - The Dependency inversion Principle (DIP) - Abstractions should not depend on
+                                    details. Details should depend on abstraction. High-level modules should not
+                                    depend on low-level modules. Both should depend on abstractions
+                                </p>
+                            </div>
+                        </div>
+                        <p>
+                   <h1 class="bold"><a class="nav-link" href="/aaatest">AAA Testing --></a></h1>
+                </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+{% endblock %}
