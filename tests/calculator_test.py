@@ -8,7 +8,7 @@ def tuple_list():
 
 def test_calculator_add_method():
     """Testing the Calculator"""
-    # this is show using the calculator object add method
+    # this id using the calculator object add method
 
     ## Act for AAA testing
     result = Calculator.add(tuple_list())
